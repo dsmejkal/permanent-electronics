@@ -1,0 +1,180 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Shop - Permanent Electronics">
+  <Navigation />
+  
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-secondary-800 to-secondary-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Shop PCBs</h1>
+      <p class="text-xl text-gray-300">
+        High-quality PCBs for all your DIY electronics projects
+      </p>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Product 1: CSSTB -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+          <img 
+            src="/images/csstb-pcb.jpg" 
+            alt="CSSTB PCB" 
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">CSSTB - Colorsound Supa Tonebender</h3>
+            <p class="text-gray-600 mb-4">
+              Big Muff Pi variant with thick distortion and tons of low end. Perfect for guitar, bass, keys, and synths.
+            </p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-primary-600">$15.00</span>
+              <span class="text-sm text-gray-500">81mm x 43mm</span>
+            </div>
+            <div class="space-y-2 mb-6">
+              <div class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm">Fits 1590BB enclosure</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm">Complete documentation included</span>
+              </div>
+            </div>
+            <button
+              class="snipcart-add-item w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+              data-item-id="csstb-pcb"
+              data-item-price="15.00"
+              data-item-description="Colorsound Supa Tonebender PCB - High quality, professionally manufactured"
+              data-item-image="/images/csstb-pcb.jpg"
+              data-item-name="CSSTB PCB"
+              data-item-categories="Guitar Effects|Distortion"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2: Coming Soon Template -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow opacity-75">
+          <div class="w-full h-48 bg-gray-200 flex items-center justify-center">
+            <span class="text-gray-500 font-semibold">Coming Soon</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Big Muff Pi Clone</h3>
+            <p class="text-gray-600 mb-4">
+              Classic fuzz distortion pedal with smooth sustain and thick tone.
+            </p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-gray-400">TBA</span>
+              <span class="text-sm text-gray-500">Size TBA</span>
+            </div>
+            <button
+              disabled
+              class="w-full bg-gray-300 text-gray-500 py-3 rounded-lg font-semibold cursor-not-allowed"
+            >
+              Coming Soon
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3: Coming Soon Template -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow opacity-75">
+          <div class="w-full h-48 bg-gray-200 flex items-center justify-center">
+            <span class="text-gray-500 font-semibold">Coming Soon</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Tube Screamer Clone</h3>
+            <p class="text-gray-600 mb-4">
+              Mid-focused overdrive pedal perfect for pushing tube amps.
+            </p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-gray-400">TBA</span>
+              <span class="text-sm text-gray-500">Size TBA</span>
+            </div>
+            <button
+              disabled
+              class="w-full bg-gray-300 text-gray-500 py-3 rounded-lg font-semibold cursor-not-allowed"
+            >
+              Coming Soon
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">
+          What's Included with Every PCB
+        </h2>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Schematic</h3>
+          <p class="text-sm text-gray-600">Complete circuit diagram</p>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Bill of Materials</h3>
+          <p class="text-sm text-gray-600">Complete parts list</p>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Build Guide</h3>
+          <p class="text-sm text-gray-600">Step-by-step instructions</p>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.25a9.75 9.75 0 100 19.5 9.75 9.75 0 000-19.5z"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Support</h3>
+          <p class="text-sm text-gray-600">Email support included</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<style>
+  /* Snipcart customization */
+  .snipcart-add-item:hover {
+    transform: translateY(-1px);
+  }
+</style>

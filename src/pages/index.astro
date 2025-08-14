@@ -1,0 +1,198 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Permanent Electronics - DIY Guitar Pedals & Electronics">
+  <Navigation />
+  
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-primary-600 to-primary-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Permanent Electronics
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 text-primary-100">
+          DIY Guitar Pedals & Electronics Projects
+        </p>
+        <p class="text-lg mb-12 text-primary-200 max-w-3xl mx-auto">
+          Specializing in high-quality PCBs, detailed schematics, and comprehensive build guides 
+          for guitar effects pedals and electronics projects. Build amazing circuits with confidence.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/projects"
+            class="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+          >
+            Browse Projects
+          </a>
+          <a
+            href="/shop"
+            class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors"
+          >
+            Shop PCBs
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Project -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Featured Project
+        </h2>
+        <p class="text-xl text-gray-600">
+          Our latest DIY electronics project
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-2xl md:text-3xl font-bold mb-6">
+            CSSTB - P.E. DIY-001
+          </h3>
+          <h4 class="text-xl text-primary-600 font-semibold mb-4">
+            Colorsound Supa Tonebender
+          </h4>
+          <p class="text-gray-700 mb-6">
+            A Big Muff Pi variant sold under the "Colorsound" brand and distributed by the UK company in the 1970s. 
+            The difference between a standard Big Muff and a Supa Tonebender is the removal of the first two clipping 
+            diodes and a coupling cap. The resulting sound is louder with tons of thick distortion, much in the same 
+            area as a Big Muff, maybe a little less fuzzy, more of a distortion than a fuzz.
+          </p>
+          <div class="space-y-4 mb-8">
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>PCB dimensions: 81mm x 43mm</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Fits nicely in a 1590BB sized enclosure</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Flexible layout for easy part selection</span>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button
+              class="snipcart-add-item bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+              data-item-id="csstb-pcb"
+              data-item-price="15.00"
+              data-item-description="Colorsound Supa Tonebender PCB - High quality, professionally manufactured"
+              data-item-image="/images/csstb-pcb.jpg"
+              data-item-name="CSSTB PCB"
+            >
+              Add PCB to Cart - $15.00
+            </button>
+            <a
+              href="/projects/csstb"
+              class="border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-colors text-center"
+            >
+              View Details
+            </a>
+          </div>
+        </div>
+        <div class="text-center">
+          <img
+            src="/images/pcb-placeholder.jpg"
+            alt="CSSTB PCB"
+            class="w-full max-w-md mx-auto rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Why Choose Permanent Electronics?
+        </h2>
+        <p class="text-xl text-gray-600">
+          Professional quality, detailed documentation, and passionate support
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">High-Quality PCBs</h3>
+          <p class="text-gray-600">
+            Professional-grade PCBs manufactured to the highest standards with excellent component placement and routing.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Detailed Documentation</h3>
+          <p class="text-gray-600">
+            Complete schematics, bills of materials, and step-by-step build guides for every project.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.25a9.75 9.75 0 100 19.5 9.75 9.75 0 000-19.5"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Expert Support</h3>
+          <p class="text-gray-600">
+            Get help from experienced electronics enthusiasts. We're here to support your DIY journey.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="bg-primary-600 text-white py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        Stay Updated with Our Latest Projects
+      </h2>
+      <p class="text-xl mb-8 text-primary-100">
+        Get new DIY projects, tutorials, and exclusive PCB releases delivered to your inbox.
+      </p>
+      <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email address"
+          class="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
+          required
+        />
+        <button
+          type="submit"
+          class="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
