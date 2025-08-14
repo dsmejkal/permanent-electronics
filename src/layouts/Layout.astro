@@ -28,15 +28,16 @@ const { title, description = "Permanent Electronics - DIY Guitar Pedals & Electr
     <!-- Configure Snipcart -->
     <script>
       window.SnipcartSettings = {
-        publicApiKey: "YOUR_SNIPCART_PUBLIC_API_KEY", // Replace with your actual key
+        publicApiKey: "pk_YOUR_ACTUAL_SNIPCART_PUBLIC_KEY_HERE", // Replace with your actual key
         loadStrategy: "on-user-interaction",
-        currency: "usd"
+        currency: "usd",
+        modalStyle: "side"
       };
     </script>
   </head>
   <body class="bg-white text-gray-900 font-sans">
     <!-- Snipcart hidden element -->
-    <div hidden id="snipcart" data-api-key="YOUR_SNIPCART_PUBLIC_API_KEY"></div>
+    <div hidden id="snipcart" data-api-key="pk_YOUR_ACTUAL_SNIPCART_PUBLIC_KEY_HERE"></div>
     
     <slot />
   </body>
