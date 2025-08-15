@@ -11,11 +11,17 @@ import Footer from '../components/Footer.astro';
   <section class="bg-gradient-to-r from-secondary-800 to-secondary-900 text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <div class="flex justify-center mb-6">
-        <img 
-          src="/images/perm-el-logo.png" 
-          alt="Permanent Electronics Logo" 
-          class="h-16 w-auto"
-        />
+        <svg width="64" height="64" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto">
+          <rect width="200" height="200" rx="20" fill="#F97316"/>
+          <path d="M50 60h100v20H50V60z" fill="white"/>
+          <path d="M50 90h80v20H50V90z" fill="white"/>
+          <path d="M50 120h60v20H50V120z" fill="white"/>
+          <circle cx="170" cy="70" r="8" fill="white"/>
+          <circle cx="150" cy="100" r="6" fill="white"/>
+          <circle cx="130" cy="130" r="4" fill="white"/>
+          <path d="M40 150h120v30H40V150z" fill="white"/>
+          <text x="100" y="170" text-anchor="middle" fill="#F97316" font-family="Arial, sans-serif" font-size="12" font-weight="bold">PE</text>
+        </svg>
       </div>
       <h1 class="text-4xl md:text-5xl font-bold mb-4">Shop PCBs</h1>
       <p class="text-xl text-gray-300">
@@ -29,88 +35,43 @@ import Footer from '../components/Footer.astro';
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
-        <!-- Product 1: CSSTB -->
+        <!-- Product 1: Silver Cord PCB 2-pack -->
         <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
           <img 
-            src="/images/PCB.jpg" 
-            alt="CSSTB PCB" 
+            src="/images/products/silver-cord-pcb.jpg" 
+            alt="Silver Cord PCB 2-pack" 
             class="w-full h-48 object-cover"
           />
           <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">CSSTB - Colorsound Supa Tonebender</h3>
+            <h3 class="text-xl font-bold mb-2">Silver Cord PCB - 2-pack</h3>
             <p class="text-gray-600 mb-4">
-              Big Muff Pi variant with thick distortion and tons of low end. Perfect for guitar, bass, keys, and synths.
+              Circuit board DIY Fuzz Distortion pedal project. Professional quality PCBs for your fuzz builds.
             </p>
             <div class="flex items-center justify-between mb-4">
-              <span class="text-2xl font-bold text-primary-600">$15.00</span>
-              <span class="text-sm text-gray-500">81mm x 43mm</span>
+              <span class="text-2xl font-bold text-primary-600">$17.00</span>
+              <span class="text-sm text-gray-500">2-pack</span>
             </div>
             <div class="space-y-2 mb-6">
               <div class="flex items-center space-x-2">
                 <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-sm">Fits 1590BB enclosure</span>
+                <span class="text-sm">Two PCBs included</span>
               </div>
               <div class="flex items-center space-x-2">
                 <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-sm">Complete documentation included</span>
+                <span class="text-sm">Fuzz distortion circuit</span>
               </div>
             </div>
             <button
               class="snipcart-add-item w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
-              data-item-id="csstb-pcb"
-              data-item-price="15.00"
-              data-item-description="Colorsound Supa Tonebender PCB - High quality, professionally manufactured"
-              data-item-image="/images/PCB.jpg"
-              data-item-name="CSSTB PCB"
-              data-item-categories="Guitar Effects|Distortion"
-            >
-              Add to Cart
-            </button>
-          </div>
-        </div>
-
-        <!-- Product 2: Big Muff Pi Clone -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-          <div class="w-full h-48 bg-gradient-to-br from-purple-200 to-purple-300 flex items-center justify-center">
-            <div class="text-center">
-              <div class="w-24 h-16 bg-green-600 rounded-lg mx-auto mb-2 shadow-md"></div>
-              <span class="text-gray-600 font-semibold">Big Muff Pi PCB</span>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">Big Muff Pi Clone - P.E. DIY-002</h3>
-            <p class="text-gray-600 mb-4">
-              Classic fuzz distortion with smooth sustain and thick, creamy tone. The iconic NYC fuzz sound loved by guitarists worldwide.
-            </p>
-            <div class="flex items-center justify-between mb-4">
-              <span class="text-2xl font-bold text-primary-600">$18.00</span>
-              <span class="text-sm text-gray-500">90mm x 50mm</span>
-            </div>
-            <div class="space-y-2 mb-6">
-              <div class="flex items-center space-x-2">
-                <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span class="text-sm">Fits 1590BB enclosure</span>
-              </div>
-              <div class="flex items-center space-x-2">
-                <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span class="text-sm">Complete documentation included</span>
-              </div>
-            </div>
-            <button
-              class="snipcart-add-item w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
-              data-item-id="big-muff-pcb"
-              data-item-price="18.00"
-              data-item-description="Big Muff Pi Clone PCB - Classic fuzz distortion circuit"
-              data-item-image="/images/big-muff-pcb-placeholder.jpg"
-              data-item-name="Big Muff Pi PCB"
+              data-item-id="silver-cord-2pack"
+              data-item-price="17.00"
+              data-item-description="Silver Cord PCB 2-pack - Circuit board DIY Fuzz Distortion pedal project"
+              data-item-image="/images/products/silver-cord-pcb.jpg"
+              data-item-name="Silver Cord PCB - 2-pack"
               data-item-categories="Guitar Effects|Fuzz"
             >
               Add to Cart
@@ -118,44 +79,87 @@ import Footer from '../components/Footer.astro';
           </div>
         </div>
 
-        <!-- Product 3: Tube Screamer Clone -->
+        <!-- Product 2: Tascam 388 Pin -->
         <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-          <div class="w-full h-48 bg-gradient-to-br from-green-200 to-green-300 flex items-center justify-center">
-            <div class="text-center">
-              <div class="w-24 h-16 bg-green-800 rounded-lg mx-auto mb-2 shadow-md"></div>
-              <span class="text-gray-600 font-semibold">Tube Screamer PCB</span>
-            </div>
-          </div>
+          <img 
+            src="/images/products/tascam-pin.jpg" 
+            alt="Tascam 388 Pin" 
+            class="w-full h-48 object-cover"
+          />
           <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">Tube Screamer Clone - P.E. DIY-003</h3>
+            <h3 class="text-xl font-bold mb-2">Tascam 388 Vintage Pin</h3>
             <p class="text-gray-600 mb-4">
-              Mid-focused overdrive perfect for pushing tube amps. The legendary green overdrive sound used by countless pros.
+              Vintage styled photodome badge metal pin 2" x 1.5". Perfect for music gear enthusiasts and collectors.
             </p>
             <div class="flex items-center justify-between mb-4">
-              <span class="text-2xl font-bold text-primary-600">$16.00</span>
-              <span class="text-sm text-gray-500">75mm x 45mm</span>
+              <span class="text-2xl font-bold text-primary-600">$15.00</span>
+              <span class="text-sm text-gray-500">2" x 1.5"</span>
             </div>
             <div class="space-y-2 mb-6">
               <div class="flex items-center space-x-2">
                 <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-sm">Fits 1590B enclosure</span>
+                <span class="text-sm">Vintage styled design</span>
               </div>
               <div class="flex items-center space-x-2">
                 <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-sm">Complete documentation included</span>
+                <span class="text-sm">Metal photodome badge</span>
               </div>
             </div>
             <button
               class="snipcart-add-item w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
-              data-item-id="tube-screamer-pcb"
-              data-item-price="16.00"
-              data-item-description="Tube Screamer Clone PCB - Classic overdrive circuit"
-              data-item-image="/images/tube-screamer-pcb-placeholder.jpg"
-              data-item-name="Tube Screamer PCB"
+              data-item-id="tascam-pin"
+              data-item-price="15.00"
+              data-item-description="Tascam 388 vintage styled photodome badge metal pin"
+              data-item-image="/images/products/tascam-pin.jpg"
+              data-item-name="Tascam 388 Vintage Pin"
+              data-item-categories="Accessories|Vintage"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3: OD Source PCB -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+          <img 
+            src="/images/products/od-source-pcb.jpg" 
+            alt="OD Source PCB" 
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">OD Source PCB</h3>
+            <p class="text-gray-600 mb-4">
+              DIY Overdrive pedal project. High-quality PCB for building your own overdrive effects pedal.
+            </p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-primary-600">$12.00</span>
+              <span class="text-sm text-gray-500">Single PCB</span>
+            </div>
+            <div class="space-y-2 mb-6">
+              <div class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm">Overdrive circuit design</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm">Professional quality PCB</span>
+              </div>
+            </div>
+            <button
+              class="snipcart-add-item w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+              data-item-id="od-source-pcb"
+              data-item-price="12.00"
+              data-item-description="OD Source PCB - DIY Overdrive pedal project"
+              data-item-image="/images/products/od-source-pcb.jpg"
+              data-item-name="OD Source PCB"
               data-item-categories="Guitar Effects|Overdrive"
             >
               Add to Cart
@@ -163,90 +167,44 @@ import Footer from '../components/Footer.astro';
           </div>
         </div>
 
-        <!-- Product 4: Fuzz Face Clone -->
+        <!-- Product 4: Silver Cord PCB Single -->
         <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-          <div class="w-full h-48 bg-gradient-to-br from-orange-200 to-orange-300 flex items-center justify-center">
-            <div class="text-center">
-              <div class="w-20 h-20 bg-gray-700 rounded-full mx-auto mb-2 shadow-md"></div>
-              <span class="text-gray-600 font-semibold">Fuzz Face PCB</span>
-            </div>
-          </div>
+          <img 
+            src="/images/products/silver-cord-single-pcb.jpg" 
+            alt="Silver Cord PCB Single" 
+            class="w-full h-48 object-cover"
+          />
           <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">Fuzz Face Clone - P.E. DIY-004</h3>
+            <h3 class="text-xl font-bold mb-2">Silver Cord PCB - Single</h3>
             <p class="text-gray-600 mb-4">
-              Simple but legendary 2-transistor fuzz circuit. The sound of Hendrix and countless rock legends.
+              Circuit board DIY Fuzz Distortion pedal project. Single PCB for individual builds.
             </p>
             <div class="flex items-center justify-between mb-4">
               <span class="text-2xl font-bold text-primary-600">$12.00</span>
-              <span class="text-sm text-gray-500">60mm x 40mm</span>
+              <span class="text-sm text-gray-500">Single PCB</span>
             </div>
             <div class="space-y-2 mb-6">
               <div class="flex items-center space-x-2">
                 <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-sm">Fits 1590A enclosure</span>
+                <span class="text-sm">Fuzz distortion circuit</span>
               </div>
               <div class="flex items-center space-x-2">
                 <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-sm">Beginner friendly build</span>
+                <span class="text-sm">High-quality construction</span>
               </div>
             </div>
             <button
               class="snipcart-add-item w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
-              data-item-id="fuzz-face-pcb"
+              data-item-id="silver-cord-single"
               data-item-price="12.00"
-              data-item-description="Fuzz Face Clone PCB - Classic 2-transistor fuzz circuit"
-              data-item-image="/images/fuzz-face-pcb-placeholder.jpg"
-              data-item-name="Fuzz Face PCB"
+              data-item-description="Silver Cord PCB - Circuit board DIY Fuzz Distortion pedal project"
+              data-item-image="/images/products/silver-cord-single-pcb.jpg"
+              data-item-name="Silver Cord PCB - Single"
               data-item-categories="Guitar Effects|Fuzz"
-            >
-              Add to Cart
-            </button>
-          </div>
-        </div>
-
-        <!-- Product 5: RAT Clone -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-          <div class="w-full h-48 bg-gradient-to-br from-red-200 to-red-300 flex items-center justify-center">
-            <div class="text-center">
-              <div class="w-24 h-16 bg-black rounded-lg mx-auto mb-2 shadow-md"></div>
-              <span class="text-gray-600 font-semibold">RAT Distortion PCB</span>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">RAT Distortion Clone - P.E. DIY-005</h3>
-            <p class="text-gray-600 mb-4">
-              Aggressive distortion with excellent note definition. From clean boost to heavy saturation in one versatile pedal.
-            </p>
-            <div class="flex items-center justify-between mb-4">
-              <span class="text-2xl font-bold text-primary-600">$17.00</span>
-              <span class="text-sm text-gray-500">85mm x 48mm</span>
-            </div>
-            <div class="space-y-2 mb-6">
-              <div class="flex items-center space-x-2">
-                <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span class="text-sm">Fits 1590BB enclosure</span>
-              </div>
-              <div class="flex items-center space-x-2">
-                <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                <span class="text-sm">Complete documentation included</span>
-              </div>
-            </div>
-            <button
-              class="snipcart-add-item w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
-              data-item-id="rat-distortion-pcb"
-              data-item-price="17.00"
-              data-item-description="RAT Distortion Clone PCB - Versatile distortion circuit"
-              data-item-image="/images/rat-pcb-placeholder.jpg"
-              data-item-name="RAT Distortion PCB"
-              data-item-categories="Guitar Effects|Distortion"
             >
               Add to Cart
             </button>

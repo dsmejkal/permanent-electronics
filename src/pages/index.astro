@@ -13,7 +13,7 @@ import Footer from '../components/Footer.astro';
     <div class="absolute inset-0 z-0">
       <div class="absolute inset-0 bg-gradient-to-r from-neutral-800/80 to-neutral-900/80 z-10"></div>
       <img 
-        src="/images/PCB.jpg" 
+        src="/images/products/csstb-pcb.jpg" 
         alt="Guitar pedals and PCB boards background" 
         class="w-full h-full object-cover filter blur-sm opacity-60"
       />
@@ -50,78 +50,141 @@ import Footer from '../components/Footer.astro';
     </div>
   </section>
 
-  <!-- Featured Project -->
+  <!-- Featured Products -->
   <section class="py-20 bg-secondary-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
-          Featured Project
+          Featured Products
         </h2>
         <p class="text-xl text-neutral-600">
-          Our latest DIY electronics project
+          High-quality PCBs for your DIY electronics projects
         </p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h3 class="text-2xl md:text-3xl font-bold mb-6">
-            CSSTB - P.E. DIY-001
-          </h3>
-          <h4 class="text-xl text-primary-600 font-semibold mb-4">
-            Colorsound Supa Tonebender
-          </h4>
-          <p class="text-neutral-700 mb-6">
-            A Big Muff Pi variant sold under the "Colorsound" brand and distributed by the UK company in the 1970s. 
-            The difference between a standard Big Muff and a Supa Tonebender is the removal of the first two clipping 
-            diodes and a coupling cap. The resulting sound is louder with tons of thick distortion, much in the same 
-            area as a Big Muff, maybe a little less fuzzy, more of a distortion than a fuzz.
-          </p>
-          <div class="space-y-4 mb-8">
-            <div class="flex items-center space-x-3">
-              <svg class="w-5 h-5 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span>PCB dimensions: 81mm x 43mm</span>
-            </div>
-            <div class="flex items-center space-x-3">
-              <svg class="w-5 h-5 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span>Fits nicely in a 1590BB sized enclosure</span>
-            </div>
-            <div class="flex items-center space-x-3">
-              <svg class="w-5 h-5 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-              </svg>
-              <span>Flexible layout for easy part selection</span>
-            </div>
-          </div>
-          <div class="flex flex-col sm:flex-row gap-4">
-            <button
-              class="snipcart-add-item bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
-              data-item-id="csstb-pcb"
-              data-item-price="15.00"
-              data-item-description="Colorsound Supa Tonebender PCB - High quality, professionally manufactured"
-              data-item-image="/images/PCB.jpg"
-              data-item-name="CSSTB PCB"
-            >
-              Add PCB to Cart - $15.00
-            </button>
-            <a
-              href="/projects/csstb"
-              class="border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-colors text-center"
-            >
-              View Details
-            </a>
-          </div>
-        </div>
-        <div class="text-center">
-          <img
-            src="/images/PCB.jpg"
-            alt="CSSTB PCB"
-            class="w-full max-w-md mx-auto rounded-lg shadow-lg"
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Product 1: Silver Cord PCB 2-pack -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+          <img 
+            src="/images/products/silver-cord-pcb.jpg" 
+            alt="Silver Cord PCB 2-pack" 
+            class="w-full h-48 object-cover"
           />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Silver Cord PCB - 2-pack</h3>
+            <p class="text-neutral-600 mb-4">
+              Circuit board DIY Fuzz Distortion pedal project. Professional quality PCBs for your fuzz builds.
+            </p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-primary-600">$17.00</span>
+              <span class="text-sm text-neutral-500">2-pack</span>
+            </div>
+            <div class="flex space-x-2">
+              <button
+                class="snipcart-add-item flex-1 bg-primary-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+                data-item-id="silver-cord-2pack"
+                data-item-price="17.00"
+                data-item-description="Silver Cord PCB 2-pack - Circuit board DIY Fuzz Distortion pedal project"
+                data-item-image="/images/products/silver-cord-pcb.jpg"
+                data-item-name="Silver Cord PCB - 2-pack"
+              >
+                Add to Cart
+              </button>
+              <a
+                href="/shop"
+                class="flex-1 border-2 border-primary-600 text-primary-600 py-2 px-4 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-colors text-center"
+              >
+                Details
+              </a>
+            </div>
+          </div>
         </div>
+
+        <!-- Product 2: Tascam Pin -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+          <img 
+            src="/images/products/tascam-pin.jpg" 
+            alt="Tascam 388 Pin" 
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Tascam 388 Vintage Pin</h3>
+            <p class="text-neutral-600 mb-4">
+              Vintage styled photodome badge metal pin 2" x 1.5". Perfect for music gear enthusiasts.
+            </p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-primary-600">$15.00</span>
+              <span class="text-sm text-neutral-500">2" x 1.5"</span>
+            </div>
+            <div class="flex space-x-2">
+              <button
+                class="snipcart-add-item flex-1 bg-primary-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+                data-item-id="tascam-pin"
+                data-item-price="15.00"
+                data-item-description="Tascam 388 vintage styled photodome badge metal pin"
+                data-item-image="/images/products/tascam-pin.jpg"
+                data-item-name="Tascam 388 Vintage Pin"
+              >
+                Add to Cart
+              </button>
+              <a
+                href="/shop"
+                class="flex-1 border-2 border-primary-600 text-primary-600 py-2 px-4 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-colors text-center"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: OD Source PCB -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+          <img 
+            src="/images/products/od-source-pcb.jpg" 
+            alt="OD Source PCB" 
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">OD Source PCB</h3>
+            <p class="text-neutral-600 mb-4">
+              DIY Overdrive pedal project. High-quality PCB for building your own overdrive effects.
+            </p>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-2xl font-bold text-primary-600">$12.00</span>
+              <span class="text-sm text-neutral-500">Single PCB</span>
+            </div>
+            <div class="flex space-x-2">
+              <button
+                class="snipcart-add-item flex-1 bg-primary-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+                data-item-id="od-source-pcb"
+                data-item-price="12.00"
+                data-item-description="OD Source PCB - DIY Overdrive pedal project"
+                data-item-image="/images/products/od-source-pcb.jpg"
+                data-item-name="OD Source PCB"
+              >
+                Add to Cart
+              </button>
+              <a
+                href="/shop"
+                class="flex-1 border-2 border-primary-600 text-primary-600 py-2 px-4 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-colors text-center"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a
+          href="/shop"
+          class="inline-flex items-center bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+        >
+          View All Products
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
       </div>
     </div>
   </section>
